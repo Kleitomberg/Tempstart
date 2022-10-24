@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - JavaScript e JSON
 - [Node e NPM](https://nodejs.org/)
 - [Vite](https://vitejs.dev/)
-- [Open Weather Map](https://openweathermap.org/api)
+- [Weather API](https://openweathermap.org/api)
 
 ## 💻 Projeto
 
