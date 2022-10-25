@@ -48,9 +48,9 @@ async function getTemperatura(city) {
           const temperatura_max = data.main.temp_max - 273.15
           const temperatura_min = data.main.temp_min - 273.15
           //inserindo na tela
-          now_temp.innerText = Math.round(temperatura)
-          max_temp.innerText = Math.round(temperatura_max)
-          min_temp.innerText = Math.round(temperatura_min)
+          now_temp.innerText = Math.round(temperatura) + '°'
+          max_temp.innerText = Math.round(temperatura_max) + '°'
+          min_temp.innerText = Math.round(temperatura_min) + '°'
           console.log(data.weather[0].description)
           setIcon(data.weather[0].description)
         }
