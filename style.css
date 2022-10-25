@@ -4,7 +4,7 @@
 }
 
 #bg {
-  background-image: url('./public/bg.png') !important;
+  background-image: url('./public/Bg.png') !important;
 
   /* Full height */
   height: 100vh;
@@ -47,6 +47,7 @@ div.result {
   padding: 16px;
   width: 400px;
   text-align: center;
+  z-index: 1;
 }
 
 div.results {
@@ -81,10 +82,75 @@ div.temperatura {
 
 div.now {
   background-color: #f9f9f9;
+  color: #00acd6;
 }
 
 .temp img {
   margin-top: 15px;
   width: 40px;
   height: 40px;
+}
+.form input:focus {
+  outline: 3px solid #00acd6;
+}
+
+/*Responsividade*/
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  #bg {
+    display: block !important;
+    height: auto;
+    width: max-content !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+  }
+  main {
+    display: block;
+    margin: 0;
+    height: max-content;
+    padding: 12px;
+  }
+
+  .div-form {
+    width: 100% !important;
+    padding: 0;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .div-form img {
+    width: 20vw;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+
+  .div-form h1 {
+    font-size: 18px;
+  }
+  .div-form p {
+    font-size: 14px;
+    text-align: center !important;
+  }
+
+  .form input {
+    width: 300px !important;
+    margin-top: 20px !important;
+  }
+  div.result {
+    width: 300px;
+    height: 160px;
+  }
+
+  div.min,
+  div.max,
+  div.now {
+    border: 1px solid #f9f9f9;
+    border-radius: 16px;
+    padding: 6px;
+    min-width: 75px;
+    min-height: 94px;
+    margin-bottom: 5px;
+  }
 }
